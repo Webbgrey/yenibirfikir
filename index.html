@@ -81,6 +81,7 @@
       font-size: 15px;
       cursor: pointer;
       border: none;
+      white-space: nowrap;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
@@ -136,6 +137,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 10px;
       height: 72px;
     }
     .logo {
@@ -757,13 +759,15 @@
     }
     @media (max-width: 600px) {
       .nav-cta .btn-ghost { display: none; }
-      .nav { height: 64px; }
-      .nav-cta { gap: 8px; }
-      .logo { font-size: 17px; gap: 8px; }
-      .logo-mark { width: 30px; height: 30px; border-radius: 9px; }
+      .nav { height: 64px; gap: 6px; }
+      .nav-cta { gap: 6px; }
+      .logo { font-size: 15px; gap: 6px; }
+      .logo-mark { width: 28px; height: 28px; border-radius: 8px; }
       .lang-switch { padding: 2px; }
-      .lang-switch button { padding: 5px 9px; font-size: 12px; }
-      .nav-cta .btn-primary { padding: 9px 16px; font-size: 14px; }
+      .lang-switch button { padding: 4px 7px; font-size: 11px; }
+      .nav-cta .btn-primary { padding: 8px 13px; font-size: 13px; }
+      .menu-toggle { width: 34px; height: 34px; }
+      .menu-toggle svg { width: 19px; height: 19px; }
       .services-grid { grid-template-columns: 1fr; }
       .process-grid { grid-template-columns: 1fr; }
       .hero-stats { gap: 32px; }
